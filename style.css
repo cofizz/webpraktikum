@@ -360,6 +360,22 @@ body {
 
 .futer p {
   margin: 0;
+  font-size:1.1em;
+}
+
+.futer i{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.sitemap-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.responsive-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1349px) {
@@ -507,7 +523,7 @@ body {
     overflow-x: hidden;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 280px) and (max-width: 500px) {
   .container {
     width: 90%;
   }
