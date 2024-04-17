@@ -1,7 +1,8 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
- }
- 
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,10 +26,11 @@ body {
 
 .logo {
   margin: 0;
-  width:70px;
+  width: 70px;
   height: 70px;
 }
-.header-left a{
+
+.header-left a {
   text-decoration: none;
   color: #fff;
 }
@@ -39,18 +41,22 @@ body {
   padding: 0;
   display: flex;
 }
+
 .navigation ul li {
   margin-right: 60px;
 }
+
 .navigation ul li:last-child {
   margin-right: 0;
 }
+
 .navigation ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 19px;
   position: relative;
 }
+
 .navigation ul li a::after {
   content: "";
   position: absolute;
@@ -62,6 +68,7 @@ body {
   width: 0;
   transition: 0.3s ease;
 }
+
 .navigation ul li a:hover::after {
   width: 100%;
 }
@@ -69,24 +76,27 @@ body {
 #home {
   width: 100%;
   height: 90vh;
-  background-image: url('images/backgroundimg4.jpg');
+  background-image: url("images/backgroundimg4.jpg");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 #home h1 {
   color: #fff;
   font-size: 4em;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
+
 #home p {
   color: #fff;
   font-size: 2em;
   margin-bottom: 50px;
   margin-top: 0;
 }
+
 #home .btn1, #home .btn2 {
   padding: 10px 20px;
   background-color: transparent;
@@ -97,13 +107,14 @@ body {
   font-size: 1.2em;
   transition: all 0.3s ease;
   text-decoration: none;
-
 }
+
 .btn1:hover, .btn2:hover {
   background-color: #fff;
   color: #000;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
+
 #home .btn2 {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -114,76 +125,77 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
+
 #about {
-    background-color: #000;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
 }
-#about h1{
-    display: block;
-    color: #fff;
+
+#about h1 {
+  display: block;
+  color: #fff;
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .about-img {
-    flex: 0 0 50%;
-    padding-right: 30px;
-    margin-top: -100px;
+  flex: 0 0 50%;
+  padding-right: 30px;
+  margin-top: -100px;
 }
 
 .about-img img {
-    max-height: 480px;
-    border-radius: 18%;
+  max-height: 480px;
+  border-radius: 18%;
 }
 
 .about-text {
-    flex: 0 0 50%;
-    max-width: 100%;
+  flex: 0 0 50%;
+  max-width: 100%;
 }
 
 .about-text h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .about-text p {
-    font-size: 1.6em;
-    margin-bottom: 20px;
+  font-size: 1.6em;
+  margin-bottom: 20px;
 }
 
 .about-text ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .about-text ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .about-text ul li:before {
-    content: "•";
-    color: #fff;
-    margin-right: 10px;
+  content: "•";
+  color: #fff;
+  margin-right: 10px;
 }
 
 .about-text a {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .about-text a:hover {
-    color: #00f;
+  color: #00f;
 }
-
 
 #skills {
   background-color: #343a40;
@@ -194,7 +206,7 @@ body {
 #skills h1 {
   margin-bottom: 4.6em;
   text-align: center;
-  font-size:2.6em;
+  font-size: 2.6em;
 }
 
 .container3 {
@@ -208,16 +220,15 @@ body {
   margin-bottom: 20px;
 }
 
-
-.skill p{
-  margin-left:15px;
+.skill p {
+  margin-left: 15px;
 }
+
 .skill i {
   margin-right: 20px;
 }
 
 .skill-bar {
- 
   height: 20px;
   background-color: #6c757d;
   border-radius: 5px;
@@ -238,6 +249,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .project-item {
@@ -254,6 +266,7 @@ body {
   box-shadow: 0 0 10px black;
   transition: transform 0.5s ease;
 }
+
 .project-item:hover img {
   transform: scale(1.03);
 }
@@ -268,7 +281,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative; 
+  position: relative;
 }
 
 .contact-container::after {
@@ -288,7 +301,7 @@ body {
   border-radius: 10px;
   border: 2px solid #000;
   background-color: #f2f2f2;
-  margin-left:60px;
+  margin-left: 60px;
 }
 
 .contact-form h2 {
@@ -328,7 +341,6 @@ body {
   transition: background-color 0.3s ease;
   width: 70%;
   margin-left: 120px;
-
 }
 
 .contact-form button:hover {
@@ -338,7 +350,6 @@ body {
 .map {
   width: 45%;
 }
-
 
 .futer {
   background-color: #000000;
@@ -351,62 +362,85 @@ body {
   margin: 0;
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) and (max-width: 1349px) {
   .container {
     width: 90%;
   }
   .header {
     padding: 10px 0;
   }
-
-  .logo {
-    width: 60px;
-  }
-
   .navigation ul li {
     margin: 0 5px;
   }
-
   .navigation ul li a {
     font-size: 1em;
   }
+  .contact-form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #f2f2f2;
+  }
+  .contact-form label {
+    margin-left: 0;
+    text-align: left;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    margin-left: 0;
+    width: 90%;
+  }
+  .contact-form button {
+    margin: 0 auto;
+    display: block;
+  }
+  .contact-container::after {
+    content: none;
+  }
+  .map {
+    width: 40%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
 }
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 801px) and (max-width: 1199px) {
   .container {
     width: 90%;
   }
   .header {
     padding: 10px 0;
   }
-
   .logo {
     width: 60px;
   }
-
   .navigation ul li {
     margin: 0 5px;
   }
-
   .navigation ul li a {
     font-size: 1em;
   }
   .contact-container {
     flex-direction: column;
   }
-  .contact-container::after{
+  .contact-container::after {
     content: none;
   }
-
   .contact-form {
-    width: 80%;
-    margin-left: 24px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #f2f2f2;
   }
   .contact-form label {
     margin-left: 0;
     text-align: left;
   }
-
   .contact-form input,
   .contact-form textarea {
     margin-left: 0;
@@ -417,16 +451,108 @@ body {
     margin-right: auto;
     display: block;
   }
-
-    .map {
-      width: 100%; /* Adjust the width to fit the screen */
-      margin-top: 20px; /* Add some spacing */
-      margin-left: auto; /* Center the map horizontally */
-      margin-right: auto;
-      overflow-x: hidden;
-    }
+  .map {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
 }
-
-
-
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .logo {
+    width: 60px;
+  }
+  .navigation ul li {
+    margin: 0 5px;
+  }
+  .navigation ul li a {
+    font-size: 1em;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container::after {
+    content: none;
+  }
+  .contact-form {
+    width: 80%;
+    margin-left: 24px;
+  }
+  .contact-form label {
+    margin-left: 0;
+    text-align: left;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    margin-left: 0;
+    width: 90%;
+  }
+  .contact-form button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .map {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .logo {
+    width: 60px;
+  }
+  .navigation ul li {
+    margin: 0 5px;
+  }
+  .navigation ul li a {
+    font-size: 1em;
+  }
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-container::after {
+    content: none;
+  }
+  .contact-form {
+    width: 80%;
+    margin-left: 24px;
+  }
+  .contact-form label {
+    margin-left: 0;
+    text-align: left;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    margin-left: 0;
+    width: 90%;
+  }
+  .contact-form button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .map {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+}
 /*# sourceMappingURL=style.css.map */
