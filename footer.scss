@@ -1,0 +1,20 @@
+.futer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 20px 0;
+  text-align: center;
+  p {
+    margin: 0;
+    font-size: 1.1em;
+  }
+  i {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .sitemap-link,
+  .responsive-link {
+    color: $secondary-color;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+}

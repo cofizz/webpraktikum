@@ -1,0 +1,64 @@
+#contact {
+  background-color: #fff;
+  color: #000;
+  padding: 50px 0;
+  .contact-container {
+    @include flex-center;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #000;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .contact-form {
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background-color: #f2f2f2;
+    margin-left: 60px;
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      label {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        margin-left: 120px;
+      }
+      input,
+      textarea {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 70%;
+        margin-left: 120px;
+      }
+      button {
+        @include button-style(#000, #fff, #000);
+        width: 70%;
+        margin-left: 120px;
+        border-radius: 5px;
+        border: none;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #1a237e;
+        }
+      }
+    }
+  }
+  .map {
+    width: 45%;
+  }
+}

@@ -1,3 +1,65 @@
+@media screen and (min-width: 801px) and (max-width: 1434px) {
+  .container {
+    width: 95%;
+  }
+  .contact-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .contact-form,
+  .map {
+    flex: 1 1 320px;
+    max-width: 600px;
+    min-width: 320px;
+    box-sizing: border-box;
+    margin: 0 20px;
+    width: 100%;
+  }
+  .contact-form {
+    max-width: 600px;
+    min-width: 320px;
+    width: 100%;
+  }
+  .map {
+    max-width: 600px;
+    min-width: 320px;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .contact-form form {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contact-form form label,
+  .contact-form form input,
+  .contact-form form textarea,
+  .contact-form form button {
+    width: 100% !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+  }
+  .contact-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #000;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: block;
+  }
+}
 @media screen and (min-width: 501px) and (max-width: 800px) {
   .container {
     width: 90%;
@@ -5,104 +67,106 @@
   .header {
     padding: 10px 0;
   }
-
   .logo {
     width: 60px;
   }
-
   .navigation ul li {
     margin: 0 5px;
   }
-
   .navigation ul li a {
     font-size: 1em;
   }
   .contact-container {
     flex-direction: column;
+    align-items: center;
   }
-  .contact-container::after{
+  .contact-container::after {
+    display: none;
     content: none;
   }
-
   .contact-form {
-    width: 80%;
-    margin-left: 24px;
-  }
-  .contact-form label {
-    margin-left: 0;
-    text-align: left;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    margin-left: 0;
     width: 90%;
+    margin-left: 0 !important;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 90%;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+    text-align: center;
   }
   .contact-form button {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
     display: block;
   }
-
-    .map {
-      width: 90%;
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      overflow-x: hidden;
-    }
+  .map {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
   }
-    @media screen and (max-width: 500px) {
-      .container {
-        width: 90%;
-      }
-      .header {
-        padding: 10px 0;
-      }
-    
-      .logo {
-        width: 60px;
-      }
-    
-      .navigation ul li {
-        margin: 0 5px;
-      }
-    
-      .navigation ul li a {
-        font-size: 1em;
-      }
-      .contact-container {
-        flex-direction: column;
-      }
-      .contact-container::after{
-        content: none;
-      }
-    
-      .contact-form {
-        width: 80%;
-        margin-left: 24px;
-      }
-      .contact-form label {
-        margin-left: 0;
-        text-align: left;
-      }
-    
-      .contact-form input,
-      .contact-form textarea {
-        margin-left: 0;
-        width: 90%;
-      }
-      .contact-form button {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-      }
-    
-        .map {
-          width: 100%;
-          margin-top: 20px;
-          margin-left: auto;
-          margin-right: auto;
-          overflow-x: hidden;
-        }
-      }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    padding: 10px 0;
+  }
+  .logo {
+    width: 60px;
+  }
+  .navigation ul li {
+    margin: 0 5px;
+  }
+  .navigation ul li a {
+    font-size: 1em;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-container::after {
+    display: none;
+    content: none;
+  }
+  .contact-form {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-form label,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 95%;
+    margin-left: 0 !important;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .contact-form button {
+    display: block;
+  }
+  .map {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+  }
+}

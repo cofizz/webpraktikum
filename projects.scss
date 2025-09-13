@@ -1,0 +1,31 @@
+#projects {
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.6em;
+  }
+}
+.container4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.project-item {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    transition: transform 0.5s ease;
+  }
+  &:hover img {
+    transform: scale(1.03);
+  }
+}
