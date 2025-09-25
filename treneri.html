@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treneri - MMA Klub Borac</title>
+    <meta name="description" content="Upoznajte trenere MMA Kluba Borac u Beogradu – stručnjake za MMA, kikboks, kondicioni trening i rad sa decom. Iskustvo, profesionalizam i posvećenost svakom članu.">
+    <meta name="keywords" content="MMA treneri, kikboks trener, kondicioni trener, MMA Klub Borac, borilačke veštine, Beograd">
+    <meta name="author" content="MMA Klub Borac">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .malo{
+            margin-top: 5px;
+        }
+        
+        .trainer-img {
+            height: 300px;
+            object-fit: cover;
+        }
+        
+        .trainer-card {
+            transition: transform 0.3s;
+        }
+        
+        .trainer-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer, .navbar {
+            background-color: #1a1a1a;
+        }
+        
+        .btn-primary {
+            background-color: #cc0000;
+            border-color: #b30000;
+        }
+        
+        .btn-primary:hover {
+            background-color: #b30000;
+            border-color: #990000;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 40vh;
+            }
+            
+            .trainer-img {
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-section {
+                height: 30vh;
+            }
+            
+            .trainer-img {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge"></i> MMA Klub Borac
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="treninzi.html">Treninzi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="treneri.html">Treneri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cenovnik.html">Cenovnik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-autoru.html">O autoru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section mt-5 pt-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Naši treneri</h1>
+            <p class="lead">Iskusni profesionalci koji će vam pomoći da postignete svoje ciljeve</p>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100 trainer-card">
+                        <img src="https://ufc.com/images/2025-06/OLIVEIRA_CHARLES_06-28.png" class="card-img-top trainer-img" alt="Nikola Jovanović">
+                        <div class="card-body">
+                            <h3 class="card-title">Nikola Jovanović</h3>
+                            <p class="text-muted">Glavni trener - MMA specijalista</p>
+                            <p class="card-text">Profesionalni MMA borac sa preko 15 godina iskustva. Takmičio se u regionalnim i evropskim organizacijama. Specijalizovan za grappling i podlogu.</p>
+                            <ul>
+                                <li>Sertifikovani trener mešovitih borilačkih veština</li>
+                                <li>Crni pojas u brazilskom džiu-džitsu</li>
+                                <li>Profesionalni rekord: 35-11-0</li>
+                                <li>10+ godina trenerskog iskustva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="card h-100 trainer-card">
+                        <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/3109135.png&w=350&h=254" class="card-img-top trainer-img" alt="Marko Petrović">
+                        <div class="card-body">
+                            <h3 class="card-title">Marko Petrović</h3>
+                            <p class="text-muted">Kikboks trener</p>
+                            <p class="card-text">Bivši prvak Srbije u kikboksu sa bogatim takmičarskim iskustvom. Specijalizovan za tehnike udaraca nogama i taktiku u stendu.</p>
+                            <ul>
+                                <li>Sertifikovani internacionalni trener kikboksa</li>
+                                <li>Bivši državni prvak u kikboksu</li>
+                                <li>Instruktor samoobrane</li>
+                                <li>8+ godina trenerskog iskustva</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 trainer-card">
+                        <img src="https://ufc.com/images/2025-05/SHEVCHENKO_VALENTINA_BELT_05-10.png" class="card-img-top trainer-img" alt="Jelena Đorđević">
+                        <div class="card-body">
+                            <h3 class="card-title">Jelena Đorđević</h3>
+                            <p class="text-muted">Kondicioni trener</p>
+                            <p class="card-text">Diplomirani profesor fizičkog vaspitanja sa specijalizacijom za funkcionalni trening i kondicionu pripremu boraca.</p>
+                            <ul>
+                                <li>Master diplomirani profesor fizičke kulture</li>
+                                <li>Specijalista za funkcionalni trening</li>
+                                <li>Sertifikovani nutricionista</li>
+                                <li>6+ godina iskustva u radu sa sportistima</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 trainer-card">
+                        <img src="https://ufc.com/images/2024-02/VOLKANOVSKI_ALEXANDER_BELT_02-17.png" class="card-img-top trainer-img" alt="Dejan Nikolić">
+                        <div class="card-body">
+                            <h3 class="card-title">Dejan Nikolić</h3>
+                            <p class="text-muted">Trener za decu i omladince</p>
+                            <p class="card-text">Specijalizovan za rad sa decom i omladincima. Naglašava vrednosti sporta, discipline i poštovanja.</p>
+                            <ul>
+                                <li>Diplomirani pedagog</li>
+                                <li>Specijalista za sportske aktivnosti dece</li>
+                                <li>Sertifikovani trener samoobrane za decu</li>
+                                <li>7+ godina iskustva u radu sa decom</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>MMA Klub Borac</h5>
+                    <p>Adresa: Zdravka Čelara 16, Beograd</p>
+                    <p>Telefon: 011/123-456</p>
+                    <p>Email: mmaklubborac@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Radno vreme</h5>
+                    <p>Ponedeljak - Petak: 08-22h</p>
+                    <p>Subota: 10-18h</p>
+                    <p>Nedelja: 10-16h</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Pratite nas</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="sitemap.xml" target="_blank" class="text-white malo"><i class="fas fa-sitemap fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2025 MMA Klub Borac. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

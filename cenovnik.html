@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cenovnik - MMA Klub Borac</title>
+    <meta name="description" content="Pogledajte cenovnik MMA Kluba Borac: paketi za početnike, standard, premium, dečiji i porodični paketi, privatni treninzi, nutricionističko savetovanje i fizička terapija.">
+    <meta name="keywords" content="MMA klub, cenovnik, MMA treninzi, kikboks, privatni treninzi, kondicioni treninzi, borilačke veštine, Beograd">
+    <meta name="author" content="MMA Klub Borac">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        
+        .malo{
+            margin-top: 5px;
+        }
+        .pricing-card {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pricing-header {
+            background-color: #cc0000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .pricing-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        
+        .pricing-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        footer, .navbar {
+            background-color: #1a1a1a;
+        }
+        
+        .btn-primary {
+            background-color: #cc0000;
+            border-color: #b30000;
+        }
+        
+        .btn-primary:hover {
+            background-color: #b30000;
+            border-color: #990000;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 40vh;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-section {
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-lightning-charge"></i> MMA Klub Borac
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Početna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="treninzi.html">Treninzi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="treneri.html">Treneri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cenovnik.html">Cenovnik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="o-autoru.html">O autoru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section mt-5 pt-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Cenovnik</h1>
+            <p class="lead">Izaberite paket koji vam najviše odgovara</p>
+        </div>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="pricing-header">
+                            <h3>Početnički</h3>
+                            <p>Idealno za one koji tek počinju</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="pricing-price">4500 RSD</div>
+                            <p>mesečno</p>
+                            <ul class="pricing-features">
+                                <li>12 treninga mesečno</li>
+                                <li>1 grupa (MMA ili Kikboks)</li>
+                                <li>Pristup opremi kluba</li>
+                                <li>Individualna procena napretka</li>
+                                <li>Besplatno probno vežbanje</li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg w-100">Izaberi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="pricing-header">
+                            <h3>Standard</h3>
+                            <p>Najpopularniji izbor</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="pricing-price">6500 RSD</div>
+                            <p>mesečno</p>
+                            <ul class="pricing-features">
+                                <li>Neograničeni treninzi</li>
+                                <li>Sve grupe (MMA, Kikboks, Kondicioni)</li>
+                                <li>Pristup opremi kluba</li>
+                                <li>Individualne konsultacije</li>
+                                <li>10% popusta na privatne treninge</li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg w-100">Izaberi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                            <p>Samo za najjače</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="pricing-price">9900 RSD</div>
+                            <p>mesečno</p>
+                            <ul class="pricing-features">
+                                <li>Neograničeni treninzi</li>
+                                <li>Sve grupe (MMA, Kikboks, Kondicioni)</li>
+                                <li>2 privatna treninga mesečno</li>
+                                <li>Individualni plan ishrane</li>
+                                <li>20% popusta na dodatne privatne treninge</li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg w-100">Izaberi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="pricing-header">
+                            <h3>Dečiji paket</h3>
+                            <p>Za mlade borce (7-14 god)</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="pricing-price">3500 RSD</div>
+                            <p>mesečno</p>
+                            <ul class="pricing-features">
+                                <li>8 treninga mesečno</li>
+                                <li>Specijalizovani program za decu</li>
+                                <li>Rad u malim grupama</li>
+                                <li>Redovni izveštaji o napretku</li>
+                                <li>Besplatna oprema za vežbanje</li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg w-100">Izaberi</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 pricing-card">
+                        <div class="pricing-header">
+                            <h3>Porodični paket</h3>
+                            <p>Za celu porodicu</p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="pricing-price">12000 RSD</div>
+                            <p>mesečno</p>
+                            <ul class="pricing-features">
+                                <li>2 člana porodice</li>
+                                <li>Neograničeni treningi za oba člana</li>
+                                <li>Sve grupe (MMA, Kikboks, Kondicioni)</li>
+                                <li>15% popusta na treći član porodice</li>
+                                <li>Besplatni individualni trening jednom mesečno</li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg w-100">Izaberi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Dodatne usluge</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Privatni treninzi</h4>
+                            <p class="card-text">Individualni pristup sa personalnim trenero</p>
+                            <p class="h5">2000 RSD po treningu</p>
+                            <p class="text-muted">(Paket od 4 treninga: 7000 RSD)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Nutricionističko savetovanje</h4>
+                            <p class="card-text">Individualni plan ishrane za maksimalne rezultate</p>
+                            <p class="h5">5000 RSD</p>
+                            <p class="text-muted">(mesečni plan sa praćenjem)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Fizička terapija</h4>
+                            <p class="card-text">Rehabilitacija povreda i poboljšanje pokretljivosti</p>
+                            <p class="h5">2500 RSD po sesiji</p>
+                            <p class="text-muted">(Paket od 5 sesija: 10000 RSD)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Jednodnevna članarina</h4>
+                            <p class="card-text">Idealno za probne treninge</p>
+                            <p class="h5">500 RSD</p>
+                            <p class="text-muted">(Pristup svim grupnim treninzima tog dana)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>MMA Klub Borac</h5>
+                    <p>Adresa: Zdravka Čelara 16, Beograd</p>
+                    <p>Telefon: 011/123-456</p>
+                    <p>Email: mmaklubborac@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Radno vreme</h5>
+                    <p>Ponedeljak - Petak: 08-22h</p>
+                    <p>Subota: 10-18h</p>
+                    <p>Nedelja: 10-16h</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Pratite nas</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="sitemap.xml" target="_blank" class="text-white malo"><i class="fas fa-sitemap fs-4"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2025 MMA Klub Borac. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
